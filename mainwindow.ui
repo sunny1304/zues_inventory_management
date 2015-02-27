@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>665</width>
+    <height>459</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QVBoxLayout" name="verticalLayout"/>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>665</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_Home">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>Home</string>
+    </property>
+    <addaction name="actionZues_Inventory_Management"/>
+   </widget>
+   <widget class="QMenu" name="menu_Settings">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>Settings</string>
+    </property>
+    <addaction name="actionCompany_Information"/>
+    <addaction name="actionEdit_Comapny_Information"/>
+   </widget>
+   <widget class="QMenu" name="menu_Vendor">
+    <property name="minimumSize">
+     <size>
+      <width>100</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="title">
+     <string>Vendors</string>
+    </property>
+    <addaction name="actionVendor_List"/>
+    <addaction name="actionAdd_Vendor"/>
+   </widget>
+   <widget class="QMenu" name="menu_Customer">
+    <property name="title">
+     <string>Customers</string>
+    </property>
+    <addaction name="actionCustomer_List"/>
+    <addaction name="actionAdd_Customer"/>
+   </widget>
+   <widget class="QMenu" name="menu_Inventory">
+    <property name="title">
+     <string>Inventory</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Purchase_Order">
+    <property name="title">
+     <string>Purchase Orders</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menu_Sell_Orders">
+    <property name="title">
+     <string>Sell Orders</string>
+    </property>
+   </widget>
+   <addaction name="menu_Home"/>
+   <addaction name="menu_Settings"/>
+   <addaction name="menu_Vendor"/>
+   <addaction name="menu_Customer"/>
+   <addaction name="menu_Inventory"/>
+   <addaction name="menu_Purchase_Order"/>
+   <addaction name="menu_Sell_Orders"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionZues_Inventory_Management">
+   <property name="text">
+    <string>Zues Inventory Management</string>
+   </property>
+  </action>
+  <action name="actionCompany_Information">
+   <property name="text">
+    <string>Add Company Information</string>
+   </property>
+  </action>
+  <action name="actionEdit_Comapny_Information">
+   <property name="text">
+    <string>Edit Comapny Information</string>
+   </property>
+  </action>
+  <action name="actionVendor_List">
+   <property name="text">
+    <string>Vendor List</string>
+   </property>
+  </action>
+  <action name="actionAdd_Vendor">
+   <property name="text">
+    <string>Add Vendor</string>
+   </property>
+  </action>
+  <action name="actionCustomer_List">
+   <property name="text">
+    <string>Customer List</string>
+   </property>
+  </action>
+  <action name="actionAdd_Customer">
+   <property name="text">
+    <string>Add Customer</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>menuBar</sender>
+   <signal>triggered(QAction*)</signal>
+   <receiver>MainWindow</receiver>
+   <slot>on_trigger_menu_Home()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>26</x>
+     <y>10</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>152</x>
+     <y>564</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>on_trigger_menu_Home()</slot>
+ </slots>
+</ui>
