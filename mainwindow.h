@@ -23,6 +23,7 @@ private slots:
     void on_actionEdit_Comapny_Information_triggered();
     void on_actionAdd_Vendor_triggered();
     void on_actionAdd_Customer_triggered();
+    void on_actionVendor_List_triggered();
 };
 
 #endif // MAINWINDOW_H

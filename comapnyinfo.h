@@ -14,9 +14,12 @@ class ComapnyInfo : public QDialog
 public:
     explicit ComapnyInfo(QWidget *parent = 0);
     ~ComapnyInfo();
+    void populate_edit_form();
 
 private slots:
     void on_company_submit_button_clicked();
+
+    void on_company_clear_button_clicked();
 
 private:
     Ui::ComapnyInfo *ui;

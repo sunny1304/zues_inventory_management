@@ -227,7 +227,7 @@ font: 75 12pt &quot;Comic Sans MS&quot;;</string>
       </spacer>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton">
+      <widget class="QPushButton" name="vendor_submit_button">
        <property name="minimumSize">
         <size>
          <width>0</width>
@@ -240,7 +240,7 @@ font: 75 12pt &quot;Comic Sans MS&quot;;</string>
       </widget>
      </item>
      <item>
-      <widget class="QPushButton" name="pushButton_2">
+      <widget class="QPushButton" name="vendor_clear_button">
        <property name="minimumSize">
         <size>
          <width>0</width>

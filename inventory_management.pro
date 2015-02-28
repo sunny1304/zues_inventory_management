@@ -4,7 +4,7 @@
 #
 #-------------------------------------------------
 
-QT       += core gui
+QT       += core gui sql
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
@@ -16,14 +16,17 @@ SOURCES += main.cpp\
         mainwindow.cpp \
     comapnyinfo.cpp \
     vendoradd.cpp \
-    customeradd.cpp
+    customeradd.cpp \
+    vendordisplay.cpp
 
 HEADERS  += mainwindow.h \
     comapnyinfo.h \
     vendoradd.h \
-    customeradd.h
+    customeradd.h \
+    vendordisplay.h
 
 FORMS    += mainwindow.ui \
     comapnyinfo.ui \
     vendoradd.ui \
-    customeradd.ui
+    customeradd.ui \
+    vendordisplay.ui
